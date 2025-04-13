@@ -16,6 +16,12 @@ https://github.com/ChirinoFrancisco/static-website
 
 https://github.com/ChirinoFrancisco/ManifiestosTP
 
+una vez clonado, abre el archvio pv.yaml que está dentro de la carpeta volumen y modifica la siguiente linea:
+
+path: D:\Workspace\taller-k8s\static-website
+
+Debes cambiar el path por la ruta donde tienes hecho el clone de los archivos de la página web.
+
 3) Arranca Minikube usando el sigueinte comando:
 
 minikube start

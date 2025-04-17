@@ -28,10 +28,13 @@ minikube start
 
 4) Montar la carpeta que contiene la página al pod.
 Ejecuta el siguiente comando en una terminal aparte (no la cierres hasta dejar de usar minikube) para copiar los archivos de la carpte donde tienes los archivos de la página web al directorio del pod:
+Siguiendo el ejemplo del directorio anterior:
 
-minikube mount "Directorio de la página web donde hiciste el clone de la pagina web":/mnt/web
+minikube mount "D:\Workspace\taller-k8s\static-website:/mnt/web"
 
-5) Aplicar los manifiestos.
+Debes cambiar el directorio por el de tu pc, luego el :/mnt/web queda igual, y todo debe ir entre "".
+
+6) Aplicar los manifiestos.
 Dirigete con la consola a la carpeta donde hayas guardado los manifiestos y ejecuta los siguientes comandos en orden:
 
 kubectl apply -f volumen/pv.yaml
